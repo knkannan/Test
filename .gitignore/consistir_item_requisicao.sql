@@ -1,4 +1,4 @@
-create or replace procedure        "CONSISTIR_ITEM_REQUISICAO"(
+create or replace procedure        CONSISTIR_ITEM_REQUISICAO(
 
 		cd_material_p			number,
 
@@ -346,7 +346,7 @@ if	(nvl(ie_geracao_w,'X') <> 'I') and
 
 		nr_requisicao_p, cd_material_p,'1',
 
-		WHEB_MENSAGEM_PCK.get_texto(300045) /*'Este material n„o È um material de estoque.'*/,
+		WHEB_MENSAGEM_PCK.get_texto(300045) /*'Este material n√£o √© um material de estoque.'*/,
 
 		'C',WHEB_MENSAGEM_PCK.get_texto(300049), nm_usuario_p);
 
@@ -616,7 +616,7 @@ if	(VarConsisteMaterialLocal_p = 'S') then
 
 			WHEB_MENSAGEM_PCK.get_texto(300100),
 
-			'C',WHEB_MENSAGEM_PCK.get_texto(300101) /*'Verifique na funÁ„o AdministraÁ„o de estoque, pasta Padrıes, subaba LiberaÁ„o.'*/, nm_usuario_p);
+			'C',WHEB_MENSAGEM_PCK.get_texto(300101) /*'Verifique na fun√ß√£o Administra√ß√£o de estoque, pasta Padr√µes, subaba Libera√ß√£o.'*/, nm_usuario_p);
 
 		
 
@@ -640,7 +640,7 @@ if	(VarConsisteMaterialLocal_p = 'S') then
 
 				WHEB_MENSAGEM_PCK.get_texto(300103),
 
-				'C',WHEB_MENSAGEM_PCK.get_texto(300101) /*'Verifique na funÁ„o AdministraÁ„o de estoque, pasta Padrıes, subaba LiberaÁ„o.'*/ , nm_usuario_p);					
+				'C',WHEB_MENSAGEM_PCK.get_texto(300101) /*'Verifique na fun√ß√£o Administra√ß√£o de estoque, pasta Padr√µes, subaba Libera√ß√£o.'*/ , nm_usuario_p);					
 
 		end if;
 
